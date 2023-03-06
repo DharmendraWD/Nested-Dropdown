@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    body{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    /* First Nav | Having Location Info and more Notice  CSS*/
+    .noticedNav{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr ;
+        align-items: center;
+        background-color:#202e24;
+        color: aliceblue;
+        padding: 5px 0px 5px 0px;
+    }
+    .noticedNav .noticeItmem{
+        text-align: center;
+
+    }
+    .noticedNav a{
+        color: aliceblue;
+        text-decoration: none;
+        font-family: "Font Awesome 5 Free";
+
+    }
+    /* Image yello color banner CSS */
+    .upperImageItem img{
+    height: auto;
+    max-width: 90%;
+    }
+    .upperImageItem {
+        display: flex;
+        justify-content: center;
+
+    }
+.upperImage{
+    margin: 10px auto;
+}
+
+    /* Main NavBar CSS | having option Home, Contact and more.. */
+nav {
+  background-color: #333;
+  color: #fff;
+}
+
+.menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.menu-item {
+  position: relative;
+  flex: 1;
+  text-align: center;
+  padding: 12px;
+  cursor: pointer;
+}
+
+.menu-item:hover .dropdown {
+  display: block;
+}
+
+.menu-item a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 0;
+  background-color: #fff;
+  min-width: 160px;
+  z-index: 1;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown li {
+  padding: 10px;
+}
+
+.dropdown li:hover {
+  background-color: #f1f1f1;
+}
+
+
+</style>
+
+</head>
+<body>
+    <!-- FIrst Nav | Having Address, Location etc -->
+    <div class="noticedNav">
+    <div class="noticeItmem">Sun - Fri 6AM - 6PM. Saturday CLOSED </div>
+      <div class="noticeItmem">
+            Nagarpalika Road, Hetauda-2
+            </div>
+        <a href=""><div class="noticeItmem fas fa-map-marker-alt"> 057-520620  mmc@ntc.net.np  mmchtd</div></a>
+</div>
+<!-- Image -->
+<div class="upperImage">
+    <div class="upperImageItem">
+        <img src="img/cropped-cropped-cropped-Heading-1536x308.png" alt="">
+    </div>
+</div>
+
+<!-- Second Nav having about, contact etc -->
+<nav>
+  <ul class="menu">
+    <li class="menu-item">
+      <a href="#">Menu 1</a>
+      <ul class="dropdown">
+        <li><a href="#">Dropdown 1</a></li>
+        <li><a href="#">Dropdown 2</a></li>
+        <li><a href="#">Dropdown 3</a></li>
+        <li><a href="#">Dropdown 4</a></li>
+        <li><a href="#">Dropdown 5</a></li>
+      </ul>
+    </li>
+    <li class="menu-item">
+      <a href="#">Menu 2</a>
+      <ul class="dropdown">
+        <li><a href="#">Dropdown 1</a></li>
+        <li><a href="#">Dropdown 2</a></li>
+        <li><a href="#">Dropdown 3</a></li>
+        <li><a href="#">Dropdown 4</a></li>
+        <li><a href="#">Dropdown 5</a></li>
+      </ul>
+    </li>
+    <li class="menu-item">
+      <a href="#">Menu 3</a>
+      <ul class="dropdown">
+        <li><a href="#">Dropdown 1</a></li>
+        <li><a href="#">Dropdown 2</a></li>
+        <li><a href="#">Dropdown 3</a></li>
+        <li><a href="#">Dropdown 4</a></li>
+        <li><a href="#">Dropdown 5</a></li>
+      </ul>
+    </li>
+    <!-- Repeat the above for menus 4-11 -->
+  </ul>
+</nav>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
